@@ -1,23 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Form from './Components/Form';
+import ItemBox from './Components/ItemBox';
+import { useState } from 'react';
 
-function App() {
+const App=()=> {
+  
+  let[input, setInput] = useState("");
+  let[inputList, setInputList] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+      <Form input ={input}
+      setInput= {setInput}
+      inputList = {inputList}
+      setInputList={setInputList}
+
+      ></Form>
+      </div>
+       <div>
+        <ItemBox  inputList={inputList} setInputList={setInputList}></ItemBox>
+      </div>   
     </div>
   );
 }
