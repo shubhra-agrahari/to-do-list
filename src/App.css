@@ -28,6 +28,40 @@
   color: #61dafb;
 }
 
+.header {
+  height: 60px;
+  background-color: rgb(195, 211, 231);
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list {
+  background-color: #cecece;
+  margin: 20px;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.list ul {
+  min-height: 200px;
+  background-color: #cecece;
+  color: black;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.footer {
+  height: 60px;
+  background-color: rgb(195, 211, 231);
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
