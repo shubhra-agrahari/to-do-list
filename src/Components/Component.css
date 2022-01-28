@@ -1,0 +1,17 @@
+
+.list {
+    background-color: #cecece;
+    margin: 20px;
+    padding: 20px;
+    min-height: 400px;
+  }
+  
+  .list ul {
+    background-color: #cecece;
+    color: black;
+  }
+  
+  .header h1 {
+    margin: 0;
+    text-align: center;
+  }
